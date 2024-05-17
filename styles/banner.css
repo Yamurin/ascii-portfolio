@@ -11,7 +11,8 @@ body {
 	backdrop-filter: blur(20px) brightness(110%);
 	padding: 1em 5em;
 	margin: 0 auto;
-	width: 45%;
+	min-width: 30vw;
+	max-width: 40vw;
 }
 
 .nav__item {
@@ -28,7 +29,7 @@ body {
 /* Banner decorativo */
 
 .banner {
-	padding: 3em 25%;
+	padding: 3em 20%;
 	background-color: var(--cor-principal);
 }
 
