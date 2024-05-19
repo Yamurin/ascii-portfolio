@@ -1,65 +1,64 @@
 .habilidades {
 	padding: 6em 20%;
-	background-color: var(--cor-principal-escuro);
+	background-color: var(--cor-fundo);
 	font-family: var(--fonte-paragrafo), sans-serif;
-	color: var(--branco);
 }
 
 .habilidades > h1,
 .projetos > h1 {
+	border-left: 12px var(--cor-destaque) solid;
+	padding-left: 0.4em;
 	margin-bottom: 0.5em;
-	font-size: 3.3em;
+	font-size: 3.5em;
 	font-weight: 700;
-	color: white;
+	color: var(--cor-principal);
 	font-family:  var(--fonte-titulo), sans-serif;
 }
 
 .habilidades__box {
-	margin-bottom: 2.5em;
+	margin-bottom: 3em;
 }
 
 .habilidades__lista > li{
 	display: inline-block;
 	padding: 1em;
 	margin: 0.5em;
-	border: 1px white solid;
+	
 	border-radius: 25px;
+	color: var(--cor-principal);
+	background-color: var(--cor-principal-20);
 }
 
-.habilidades__descricao > h2 {
-	color: var(--cor-destaque);
-	margin-bottom: 0.5em;
-	font-size: 1.5em;
-	font-family: var(--fonte-titulo), sans-serif;
-	font-weight: 700;
+.habilidades__descricao {
+	h2 {
+		color: var(--cor-destaque);
+		margin-bottom: 0.5em;
+		font-size: 1.5em;
+		font-family: var(--fonte-titulo), sans-serif;
+		font-weight: 700;
+	}
+
+	p {
+		margin-bottom: 0.3em;
+		font-weight: 400;
+		line-height: 120%;
+		color: var(--preto);
+	}
 }
 
 .habilidades__descricao > h2 > i{
 	margin-right: 1em;
 }
 
-.habilidades__descricao > p {
-	margin-bottom: 0.3em;
-	font-weight: 400;
-}
 
 /* Subseção de projetos */
 .projetos {
-	margin: 6em 0;
-}
-.projetos > h1 {
-	text-align: center;
-}
-
-.projetos__flexbox {
-	display: flex;
-	gap: 1em;
-	justify-content: center;
-	width: 100%;
+	padding: 6em 20%;
+	background-color: var(--branco);
 }
 
 .projeto__card {
-	width: 400px;
+	display: flex;
 	max-height: 600px;
 	border-radius: 15px;
 	border-bottom: 2px solid var(--cor-destaque);
@@ -67,11 +66,7 @@
 	font-family: var(--fonte-paragrafo), sans-serif;
 	color: #000;
 	background-color: var(--branco);
-
-	img:hover,
-	a:hover {
-		transform: scale(1.05);
-	}
+	box-shadow: 5px 5px 10px #cacaca;
 
 	h3 {
 		color: #5f5f5f;
@@ -81,9 +76,13 @@
 
 .projeto__img {
 	overflow: hidden;
-	height: 270px;
+	height: 100%;
 		img {
 			width: 100%;
+		}
+
+		img:hover {
+			transform: scale(1.05);
 		}
 }
 
@@ -102,13 +101,23 @@
 	}
 
 	a {
-		display: block;
+		display: inline-block;
+		margin: 1.2em 1em;
 		padding: 1em;
-		margin: 1em auto;
-		background-color: var(--cor-destaque);
 		width: 30%;
 		text-align: center;
 		text-decoration: none;
+		color: var(--cor-destaque);
+		border: 1px var(--cor-destaque) solid;
 		border-radius: 25px;
+	}
+
+	i {
+		padding-right: 1em;
+	}
+
+	a:hover {
+		background-color: var(--cor-destaque);
+		color: var(--branco);
 	}
 }

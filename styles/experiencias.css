@@ -1,14 +1,21 @@
 .experiencia {
 	padding: 3em 15%;
-	background-color: var(--cor-principal);
+	background-color: var(--cor-fundo);
 	font-family: var(--fonte-paragrafo);
+	color: var(--preto);
+
+	 p {
+		margin-bottom: 1em;
+	 }
 }
 
 .experiencia > h1 {
+	border-left: 12px var(--cor-destaque) solid;
+	padding-left: 0.4em;
 	margin-bottom: 0.5em;
 	font-size: 3.3em;
 	font-weight: 700;
-	color: white;
+	color: var(--cor-principal);
 	font-family:  var(--fonte-titulo), sans-serif;
 }
 
@@ -18,7 +25,7 @@
 
 .lista-exp__item-container {
 	justify-content: center;
-	color: white;
+	color: var(--branco);
 	display: flex;
 	gap: 1em;
 	padding: 1.3em;
@@ -27,26 +34,32 @@
 }
 
 .item-exp__data {
+	color: var(--cor-destaque);
 	white-space: no-wrap;
-	width: 100%;
+	width: 40%;
     text-align: left;
 }
 
 .item-exp__titulo {
+	color: var(--preto);
 	display: inline-block;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	font-weight: 700;
 	margin-bottom: 0.3em;
+
+	h2 {
+		display: inline-block;
+		margin: 0 0.7em 0.5em 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--preto);;
+	}
 }
 
-.item-exp__titulo h2 {
-	display: inline-block;
-	margin-right: 0.7em;
-}
-
-.item-exp__titulo a {
-	text-decoration: none;
-	color: white;
+.item-exp__titulo:hover a {
+	color: var(--cor-destaque);
 }
 
 .item-exp__icon {
@@ -54,9 +67,9 @@
 }
 
 .item-exp__descricao {
-
     h3 {
-        font-size: 1.3em;
+		color: var(--cor-principal);
+        font-size: 1em;
         font-weight: 400;
         margin-bottom: 0.8em;
     }
@@ -66,7 +79,7 @@
         font-weight: 400;
         margin-bottom: 0.7em;
         line-height: 125%;
-        color: #e1cff0;
+        color: var(--preto);
     }
 }
 
@@ -75,9 +88,6 @@
 	border-radius: 5px;
 }
 
-.item-exp__titulo:hover a {
-	color: var(--cor-destaque);
-}
 
 .item-exp__lista-keywords > li {
 	display: inline-block;
@@ -85,6 +95,6 @@
 	margin: 0.2em;
 	padding: 0.7em;
     color: var(--cor-principal);
-    background-color: var(--branco);
+    border: 1px var(--cor-principal) solid;
 	border-radius: 50px;
 }
