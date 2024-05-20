@@ -1,0 +1,39 @@
+.contato {
+    background-color: var(--cor-principal);
+    padding: 6em 20%;
+    font-family: var(--fonte-paragrafo);
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    h3 {
+        text-align: center;
+        font-weight: 600;
+        margin: 1em 0;
+
+    }
+}
+.contato__social {
+    a {
+        display: inline-block;
+        padding: 0.5em;
+        border-radius: 50px;
+        background-color: var(--branco);
+        color: var(--cor-destaque);
+        margin: 0.2em;
+        font-size: 2em;
+        text-decoration: none;
+    }
+}
+
+.contato__info {
+    a {
+        padding: 1em;
+        border-radius: 50px;
+        background-color: var(--branco);
+        color: var(--cor-destaque);
+        margin: 0.2em;
+        font-size: 1em;
+        text-decoration: none;
+    }
+}

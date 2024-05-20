@@ -12,7 +12,7 @@ body {
 
 .nav__item {
 	display: inline;
-	margin: 1em;
+	margin: 5em;
 	font-family: var(--fonte-paragrafo), sans-serif;
 	font-size: 1em;
 
