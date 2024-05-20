@@ -39,6 +39,12 @@ body {
 	font-family: var(--fonte-titulo), sans-serif;
 	font-weight: 900;
 	color: var(--cor-principal);
+	
+	img {
+		display: inline;
+		height: 0.9em;
+		width: auto;
+	}
 }
 
 .banner__subtitulo {

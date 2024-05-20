@@ -1,3 +1,7 @@
+b {
+	font-weight: 800;
+}
+
 .habilidades {
 	padding: 6em 20%;
 	background-color: var(--cor-fundo);
@@ -16,6 +20,9 @@
 }
 
 .habilidades__box {
+	display: flex;
+	align-items: center;
+	gap: 1em;
 	margin-bottom: 3em;
 }
 
@@ -29,15 +36,13 @@
 	background-color: var(--cor-principal-20);
 }
 
-.habilidades__descricao {
-	h2 {
-		color: var(--cor-destaque);
-		margin-bottom: 0.5em;
-		font-size: 1.5em;
-		font-family: var(--fonte-titulo), sans-serif;
-		font-weight: 700;
+.negrito {
+		font-weight: bold;
+		display: inline;
 	}
-
+	
+.habilidades__descricao {
+	max-width: 60%;
 	p {
 		margin-bottom: 0.3em;
 		font-weight: 400;
@@ -46,6 +51,18 @@
 	}
 }
 
+.habilidades__subtitulo {
+		color: var(--cor-destaque);
+		margin-bottom: 0.5em;
+		font-size: 1.5em;
+		font-family: var(--fonte-titulo), sans-serif;
+		font-weight: 700;
+		
+		i {
+			margin-right: 0.4em;
+		}
+	}
+	
 .habilidades__descricao > h2 > i{
 	margin-right: 1em;
 }
