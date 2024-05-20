@@ -5,7 +5,8 @@
 	color: var(--preto);
 
 	 p {
-		margin-bottom: 1em;
+		line-height: 1.4em;
+		margin: 1em 0;
 	 }
 }
 
