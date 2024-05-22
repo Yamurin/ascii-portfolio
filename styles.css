@@ -252,11 +252,10 @@ li {
 }
 
 .experiencia-card {
-    justify-content: center;
+    justify-content: flex-start;
     color: var(--branco);
     display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
+    gap: 2em;
     padding: 1.3em;
     margin: 0.4em;
     width: 100%;
@@ -264,12 +263,13 @@ li {
 
 .experiencia-card__data {
     color: var(--accent-color);
-    width: 40%;
+	display: inline-block;
+    text-wrap: nowrap;
     text-align: left;
 }
 
 .experiencia-card__description-wrapper {
-    width: 100%;
+    width: 70%;
 }
 
 .experiencia-card__title {
