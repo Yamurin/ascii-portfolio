@@ -188,8 +188,8 @@ li {
 /* || Sub-seção de Projetos*/
 .projeto-card {
     display: flex;
-    margin: 0 auto;
-	max-height: 400px;
+    margin: 2em 0;
+	max-height: 330px;
     width: 900px;
 	border-radius: 15px;
 	border-bottom: 2px solid var(--accent-color);
@@ -214,6 +214,7 @@ li {
 
 .projeto-card__description-wrapper {
     padding: 2.5em;
+    width: 100%;
 }
 
 .projeto-card__languages {
@@ -229,10 +230,10 @@ li {
 
 .projeto-card__button {
     display: inline-block;
-    margin: 1.2em 1em;
+    margin: 1em 0.4em;
     padding: 1em;
-    width: 30%;
     text-align: center;
+    text-wrap:nowrap;
     text-decoration: none;
     color: var(--accent-color);
     border: 1px var(--accent-color) solid;
