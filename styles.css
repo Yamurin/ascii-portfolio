@@ -1,21 +1,357 @@
-@import url("styles/banner.css");
-@import url("styles/habilidades.css");
-@import url("styles/sobre-mim.css");
-@import url("styles/experiencias.css");
-@import url("styles/contato.css");
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400..900&display=swap');
 
 :root {
-	--banner-cor-fundo: #30bccc; 
-	--branco: #fff;
-	--cor-principal: #a65ff0;
-	--cor-destaque: #23d2f5;
-	--cor-principal-20: #e2dcfc;
-	--cor-fundo: rgb(248, 241, 253);
-	--preto: #0d1821;
+    --accent-color: #23d2f5;
+    --main-color: #a65ff0;
+    --main-color-dark: #7e49e0;
+    --main-color-20: #f8f1fd;
+    --main-color-30: #e2dcfc;
+	--white: #fff;
+	--black: #0d1821;
 	
-	--fonte-titulo: "Radio Canada Big";
-	--fonte-paragrafo: "Nunito"
+	--font-title: "Radio Canada Big";
+	--font-paragraph: "Nunito";
+}
+
+section {
+    padding: 3em 20%;
+    font-family: var(--font-paragraph);
+    color: var(--black);
+}
+
+h1 {
+    border-left: 12px var(--accent-color) solid;
+    padding-left: 0.4em;
+    margin-bottom: 0.5em;
+    font-size: 3.5em;
+    font-weight: 700;
+    color: var(--main-color);
+    font-family: var(--font-title), sans-serif;
+}
+
+hr {
+    border: 0.5px solid lightgray;
+}
+
+i {
+    margin: 0 0.5em;
+    display: inline-block;
+}
+
+p {
+    font-weight: 400;
+    line-height: 150%;
+    font-family: var(--font-paragraph);
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+	color: var(--main-color);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+li {
+    font-family: var(--font-paragraph);
+    display: inline-block;
+	margin: 0 0.5em;
+}
+
+.bold {
+    font-weight: bold;
+	display: inline;
+}
+
+/* || Barra de Navegação */
+.nav-bar__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 4em;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px lightgray solid;
+}
+
+.nav-bar__item {
+    display: inline;
+	font-size: 1em;
+}
+
+/* || Banner de Introdução */
+.banner {
+	background-color: var(--white);
+}
+
+.banner__title {
+	margin-top: 1em;
+	font-size: 4em;
+	font-family: var(--font-title), sans-serif;
+	font-weight: 900;
+	color: var(--accent-color);
+    border: none;
+    padding: 0;
+}
+
+.banner__emoji {
+    display: inline;
+	height: 1em;
+	width: auto;
+}
+
+.banner__subtitle {
+    font-size: 1.2em;
+	margin: 1em 0 2.5em 0;
+	font-family: var(--font-title), sans-serif;
+	letter-spacing: .2rem;
+    color: var(--black);
+}
+
+.banner__content-wrapper {
+    display: flex;
+    width: 100%;
+	gap: 1.3em;
+	align-items: flex-start;
+    justify-content: space-between;
+}
+
+.banner__description-wrapper {
+	margin: auto 0;
+}
+
+.banner__button {
+    display: inline-block;
+    box-sizing: border-box;
+    background: none;
+    background-color: var(--main-color);
+    color: var(--white);
+    padding: 1em 1.2em;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1em;
+    font-family: var(--font-tile);  
+    margin: 0.2em;
+
+    i {
+        margin: 0 1em 0 0;
+    }
+}
+
+.banner__button:hover {
+    background-color: var(--main-color-dark);
+    color: lightgray;
+}
+
+.banner__image {
+    min-height: 200px;
+    max-height: 320px;
+	border-radius: 1000px;
+	display: block;
+}
+
+/* || Seção de Habilidades*/
+
+.habilidades {
+	background-color: var(--main-color-20);
+}
+
+.habilidades__subtitle {
+    color: var(--accent-color);
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-family: var(--font-title), sans-serif;
+    font-weight: 700;
+}
+
+.habilidades__description-wrapper {
+    display: flex;
+	align-items: center;
+	gap: 1em;
+	margin-bottom: 3em;
+}
+
+.habilidades_description {
+    max-width: 50%;
+}
+
+.habilidades__keyword {
+	border-radius: 25px;
+    margin-bottom: 1em;
+	color: var(--main-color);
+	background-color: var(--main-color-30);
+    padding: 0.8em;
+}
+
+/* || Sub-seção de Projetos*/
+.projeto-card {
+    display: flex;
+    margin: 0 auto;
+	max-height: 400px;
+    max-width: 800px;
+	border-radius: 15px;
+	border-bottom: 2px solid var(--accent-color);
+	overflow: hidden;
+	font-family: var(--font-paragraph), sans-serif;
+	color: #000;
+	background-color: var(--white);
+	box-shadow: 5px 5px 10px lightgray;
+}
+
+.projeto-card__img {
+	overflow: hidden;
+	height: 100%;
+
+		img {
+			width: 100%;
+		}
+
+		img:hover {
+			transform: scale(1.05);
+		}
+}
+
+.projeto-card__description-wrapper {
+    padding: 2.5em;
+}
+
+.projeto-card__languages {
+    color: grey;
+	margin-bottom: 1.3em;
+}
+
+.projeto-card__title {
+    font-weight: 800;
+	font-size: 1.1em;
+	margin-bottom: 0.7em;
+}
+
+.projeto-card__button {
+    display: inline-block;
+    margin: 1.2em 1em;
+    padding: 1em;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--accent-color);
+    border: 1px var(--accent-color) solid;
+    border-radius: 25px;
+}
+
+.projeto-card__button:hover {
+    background-color: var(--accent-color);
+    color: var(--white);
+}
+
+/* || Seção de Experiências */
+.experiencia {
+    background-color: var(--main-color-20);
+}
+
+.experiencia-card {
+    justify-content: center;
+    color: var(--branco);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1.3em;
+    margin: 0.4em;
+    width: 100%;
+}
+
+.experiencia-card__data {
+    color: var(--accent-color);
+    width: 40%;
+    text-align: left;
+}
+
+.experiencia-card__description-wrapper {
+    width: 100%;
+}
+
+.experiencia-card__title {
+    font-family: var(--font-title);
+    display: inline-block;
+	font-size: 1.1em;
+	font-weight: 500;
+	margin-bottom: 0.3em;
+    a { color: black; }
+    a:hover {color: var(--accent-color);}
+}
+
+.experiencia-card__subtitle {
+    color: var(--main-color);
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0.8em;
+}
+
+.experiencia__keyword {
+    display: inline-block;
+	font-size: 0.9em;
+	margin: 0.2em;
+	padding: 0.7em;
+    color: var(--main-color);
+    border: 1px var(--main-color) solid;
+	border-radius: 50px;
+}
+
+/* || Seção de Contato */
+.contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.contato__content-wrapper {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.social-media-list {
+    box-sizing: content-box;
+    margin: 1.5em 0;
+    width: 100%;
+}
+
+.social-media-list__item {
+    display: inline-block;
+}
+
+.contato__emoji {
+    width: 120px;
+    margin: 1em;
+}
+
+.contato__message {
+    font-size: 1.2em;
+}
+
+.contato__title {
+    font-size: 1.1em;
+    font-weight: 600; 
+    margin-bottom: 1em;
+}
+
+.contato-link {
+    display: block;
+    margin: 0.5em;
+    font-size: 1.1em;
+}
+
+.social-media__button {
+    color: var(--white);
+    font-size: 1.5em;
+    text-align: center;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    padding: 0.3em;
+}
+
+.social-media__button:hover {
+    font-size: 1.55em;
+    color: lightcyan;
 }
